@@ -1,15 +1,20 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
+require("dotenv").config
+
 const app = express.Router();
 
 app.post("/", (req, res) => {
   let { name, surname, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: gmail,
+    host: smtp.gmail.com,
+    port: 465,
+    secure: true,
     auth: {
-      user: "Simamkelejanuary@gmail.com",
-      pass: "Boxing@19",
+      user: process.env.EMAIL,
+      pass: process.env.PASS,
     },
   });
 
