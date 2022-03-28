@@ -52,6 +52,22 @@ let Testimonials = [
     Name: "Alex Sexwale",
     title: "Senior Full-stack developer",
   },
+  {
+    Description:
+      "Simamkele is one of the most dedicated and determined people i know. he is extremely hardworking and very goal-driven. hes an amazing team player and never gives up",
+    id: 7,
+    img: "https://i.postimg.cc/Pr5sWw2S/Haniah2-1.jpg",
+    Name: "Haniah Jardien",
+    title: "Colleague",
+  },
+  {
+    Description:
+      "Simamkele is dilligent and takes pide in producing quality work.He will achive greatness as he progresses in his career.",
+    id: 8,
+    img: "https://i.postimg.cc/rp5zXYjK/Leigh-ann3.jpg",
+    Name: "Leigh-Anne Bowers",
+    title: "Colleague",
+  },
 ];
 
 // GET ALL TESTIMONIAL
