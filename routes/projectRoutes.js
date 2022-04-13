@@ -12,14 +12,14 @@ let projects = [
     source: "https://github.com/simamkele21/project",
     live: "https://eloquent-babbage-f22814.netlify.app/",
   },
-  {
-    img: "https://i.postimg.cc/9f8hdYVG/onlinestore.png",
-    title: "ONLINE STORE",
-    id: 2,
-    category: "HTML & CSS",
-    source: "https://github.com/simamkele21/project",
-    live: "https://agitated-clarke-7afb9c.netlify.app/",
-  },
+  // {
+  //   img: "https://i.postimg.cc/9f8hdYVG/onlinestore.png",
+  //   title: "ONLINE STORE",
+  //   id: 2,
+  //   category: "HTML & CSS",
+  //   source: "https://github.com/simamkele21/project",
+  //   live: "https://agitated-clarke-7afb9c.netlify.app/",
+  // },
   {
     img: "https://i.postimg.cc/ZY1JsHNH/mediaq.png",
     title: "MEDIA QUERIES",
@@ -28,14 +28,14 @@ let projects = [
     source: "https://github.com/simamkele21/Media-Queries",
     live: "https://gallant-wright-e119ca.netlify.app/",
   },
-  {
-    img: "https://i.postimg.cc/sgJyXRNH/fc.png",
-    title: "Flipcards",
-    id: 4,
-    category: "HTML & CSS",
-    source: "https://github.com/simamkele21/flipcards",
-    live: "https://stoic-shannon-5c2e3b.netlify.app/",
-  },
+  // {
+  //   img: "https://i.postimg.cc/sgJyXRNH/fc.png",
+  //   title: "Flipcards",
+  //   id: 4,
+  //   category: "HTML & CSS",
+  //   source: "https://github.com/simamkele21/flipcards",
+  //   live: "https://stoic-shannon-5c2e3b.netlify.app/",
+  // },
   {
     img: "https://i.postimg.cc/02jSjGxR/Screenshot-from-2022-02-01-09-38-05.png",
     title: "Box Model",
@@ -95,7 +95,7 @@ app.get("/", (req, res) => {
 app.get("/:id", (req, res) => {
   const project = projects.find((project) => project.id == req.params.id);
   if (!project)
-    res.status(404).send("The item with the given id was not found");
+  res.status(404).send("The item with the given id was not found");
   res.send(project);
 });
 
