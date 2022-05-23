@@ -24,7 +24,7 @@ let Resume = [
     role: "Intern",
     responsibilities: [
       "Administration",
-      "reating and maintaining databases",
+      "Creating and maintaining databases",
       "Stakeholder liaising",
     ],
   },
